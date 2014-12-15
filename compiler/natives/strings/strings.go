@@ -3,7 +3,7 @@
 package strings
 
 import (
-	"github.com/gopherjs/gopherjs/js"
+	"gopkg.in/metakeule/gopherjs/js"
 )
 
 func IndexByte(s string, c byte) int {

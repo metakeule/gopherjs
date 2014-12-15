@@ -7,13 +7,13 @@ an io.Writer to which the sourcemap will be written to.
 
 Example compiling go code:
 
-  import "github.com/gopherjs/gopherjs/jslib"
+  import "gopkg.in/metakeule/gopherjs/jslib"
 
   ...
 
   code := strings.NewReader(`
     package main
-    import "github.com/gopherjs/gopherjs/js"
+    import "gopkg.in/metakeule/gopherjs/js"
     func main() { println(js.Global.Get("window")) }
   `)
 
@@ -29,7 +29,7 @@ Example compiling multiple files:
 
   fileA := strings.NewReader(`
     package main
-    import "github.com/gopherjs/gopherjs/js"
+    import "gopkg.in/metakeule/gopherjs/js"
     func a() { println(js.Global.Get("window")) }
   `)
 
@@ -43,8 +43,8 @@ package jslib
 
 import (
 	"bytes"
-	"github.com/gopherjs/gopherjs/build"
-	"github.com/gopherjs/gopherjs/compiler"
+	"gopkg.in/metakeule/gopherjs/build"
+	"gopkg.in/metakeule/gopherjs/compiler"
 	"go/ast"
 	"go/parser"
 	"go/token"

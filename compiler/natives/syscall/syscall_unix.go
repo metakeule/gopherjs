@@ -3,7 +3,7 @@
 package syscall
 
 import (
-	"github.com/gopherjs/gopherjs/js"
+	"gopkg.in/metakeule/gopherjs/js"
 	"unsafe"
 )
 

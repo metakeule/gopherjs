@@ -484,7 +484,7 @@ func (c *funcContext) translateExpr(expr ast.Expr) *expression {
 					if len(c.flattened) != 0 {
 						args = "$args"
 					}
-					return c.formatExpr(`new ($sliceType(%s.Object))($global.Array.prototype.slice.call(%s))`, c.p.pkgVars["github.com/gopherjs/gopherjs/js"], args)
+					return c.formatExpr(`new ($sliceType(%s.Object))($global.Array.prototype.slice.call(%s))`, c.p.pkgVars["gopkg.in/metakeule/gopherjs/js"], args)
 				case "Module":
 					return c.formatExpr("$module")
 				case "Callback":

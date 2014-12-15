@@ -5,7 +5,7 @@ import (
 	"code.google.com/p/go.tools/go/types"
 	"encoding/json"
 	"fmt"
-	"github.com/gopherjs/gopherjs/gcexporter"
+	"gopkg.in/metakeule/gopherjs/gcexporter"
 	"go/ast"
 	"go/token"
 	"sort"
@@ -94,7 +94,7 @@ func Compile(importPath string, files []*ast.File, fileSet *token.FileSet, impor
 	archive := &Archive{
 		ImportPath:   PkgPath(importPath),
 		GcData:       gcData.Bytes(),
-		Dependencies: []PkgPath{PkgPath("github.com/gopherjs/gopherjs/js"), PkgPath("runtime")}, // all packages depend on those
+		Dependencies: []PkgPath{PkgPath("gopkg.in/metakeule/gopherjs/js"), PkgPath("runtime")}, // all packages depend on those
 		FileSet:      encodedFileSet.Bytes(),
 		Minified:     minify,
 	}
