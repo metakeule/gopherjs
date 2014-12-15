@@ -2,8 +2,8 @@ package compiler
 
 import (
 	"bytes"
-	"code.google.com/p/go.tools/go/exact"
-	"code.google.com/p/go.tools/go/types"
+	"gopkg.in/metakeule/tools.v1/go/exact"
+	"gopkg.in/metakeule/tools.v1/go/types"
 	"fmt"
 	"go/ast"
 	"go/token"

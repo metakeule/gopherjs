@@ -1,7 +1,7 @@
 package main
 
 import (
-	"code.google.com/p/go.tools/go/types"
+	"gopkg.in/metakeule/tools.v1/go/types"
 	"flag"
 	"fmt"
 	gbuild "github.com/gopherjs/gopherjs/build"

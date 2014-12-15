@@ -2,8 +2,7 @@
 Package jslib provides functions for compilation without resorting to the shell.
 
 All of them take the optional *Options argument. It can be
-used to set a different GOROOT or GOPATH directory or	to provide
-an io.Writer to which the sourcemap will be written to.
+used to set a different GOROOT or GOPATH directory or	to enable minification.
 
 Example compiling go code:
 
@@ -201,8 +200,5 @@ func (b *builder) Build() error {
 		return ErrorImportingDependencies(err.Error())
 	}
 
-	// TODO: it would be better, if WriteProgramCode would return any writing errors
-	// so we could return them here
-	compiler.WriteProgramCode(deps, s.ImportContext, &compiler.SourceMapFilter{Writer: b.target})
-	return nil
+	return compiler.WriteProgramCode(deps, s.ImportContext, &compiler.SourceMapFilter{Writer: b.target})
 }

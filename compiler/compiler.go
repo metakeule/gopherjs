@@ -2,8 +2,8 @@ package compiler
 
 import (
 	"bytes"
-	"code.google.com/p/go.tools/go/gcimporter"
-	"code.google.com/p/go.tools/go/types"
+	"gopkg.in/metakeule/tools.v1/go/gcimporter"
+	"gopkg.in/metakeule/tools.v1/go/types"
 	"encoding/asn1"
 	"encoding/binary"
 	"encoding/json"

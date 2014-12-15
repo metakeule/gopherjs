@@ -2,7 +2,7 @@ package build
 
 import (
 	"bitbucket.org/kardianos/osext"
-	"code.google.com/p/go.exp/fsnotify"
+	"gopkg.in/fsnotify.v1"
 	"fmt"
 	"github.com/gopherjs/gopherjs/compiler"
 	"github.com/neelance/sourcemap"
