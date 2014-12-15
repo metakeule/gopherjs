@@ -2,7 +2,7 @@ package compiler
 
 import (
 	"bytes"
-	"code.google.com/p/go.tools/go/types"
+	"golang.org/x/tools/go/types"
 	"encoding/binary"
 	"fmt"
 	"go/ast"

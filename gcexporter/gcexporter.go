@@ -1,8 +1,8 @@
 package gcexporter
 
 import (
-	"code.google.com/p/go.tools/go/exact"
-	"code.google.com/p/go.tools/go/types"
+	"golang.org/x/tools/go/exact"
+	"golang.org/x/tools/go/types"
 	"fmt"
 	"io"
 	"strconv"
