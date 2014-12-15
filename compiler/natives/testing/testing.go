@@ -5,7 +5,7 @@ package testing
 import (
 	"flag"
 	"fmt"
-	"github.com/gopherjs/gopherjs/js"
+	"gopkg.in/metakeule/gopherjs/js"
 	"os"
 	"time"
 )

@@ -4,7 +4,7 @@ import (
 	"bitbucket.org/kardianos/osext"
 	"gopkg.in/fsnotify.v1"
 	"fmt"
-	"github.com/gopherjs/gopherjs/compiler"
+	"gopkg.in/metakeule/gopherjs/compiler"
 	"github.com/neelance/sourcemap"
 	"go/ast"
 	"go/build"
@@ -81,7 +81,7 @@ func Parse(pkg *build.Package, fileSet *token.FileSet) ([]*ast.File, error) {
 	if isTestPkg {
 		importPath = importPath[:len(importPath)-5]
 	}
-	if nativesPkg, err := Import("github.com/gopherjs/gopherjs/compiler/natives/"+importPath, 0, "js"); err == nil {
+	if nativesPkg, err := Import("gopkg.in/metakeule/gopherjs/compiler/natives/"+importPath, 0, "js"); err == nil {
 		names := append(nativesPkg.GoFiles, nativesPkg.TestGoFiles...)
 		if isTestPkg {
 			names = nativesPkg.XTestGoFiles

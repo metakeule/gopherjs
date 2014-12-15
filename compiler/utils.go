@@ -2,13 +2,14 @@ package compiler
 
 import (
 	"bytes"
-	"gopkg.in/metakeule/tools.v1/go/types"
 	"encoding/binary"
 	"fmt"
 	"go/ast"
 	"go/token"
 	"strconv"
 	"strings"
+
+	"golang.org/x/tools/go/types"
 )
 
 func (c *funcContext) Write(b []byte) (int, error) {
@@ -409,7 +410,7 @@ func encodeString(s string) string {
 }
 
 func isJsPackage(pkg *types.Package) bool {
-	return pkg != nil && pkg.Path() == "github.com/gopherjs/gopherjs/js"
+	return pkg != nil && pkg.Path() == "gopkg.in/metakeule/gopherjs/js"
 }
 
 func isJsObject(t types.Type) bool {

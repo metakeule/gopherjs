@@ -3,7 +3,7 @@
 package math
 
 import (
-	"github.com/gopherjs/gopherjs/js"
+	"gopkg.in/metakeule/gopherjs/js"
 )
 
 var math = js.Global.Get("Math")

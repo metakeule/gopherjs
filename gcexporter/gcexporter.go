@@ -1,13 +1,14 @@
 package gcexporter
 
 import (
-	"gopkg.in/metakeule/tools.v1/go/exact"
-	"gopkg.in/metakeule/tools.v1/go/types"
 	"fmt"
 	"io"
 	"strconv"
 	"strings"
 	"unicode"
+
+	"golang.org/x/tools/go/exact"
+	"golang.org/x/tools/go/types"
 )
 
 type exporter struct {

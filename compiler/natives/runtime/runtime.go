@@ -3,7 +3,7 @@
 package runtime
 
 import (
-	"github.com/gopherjs/gopherjs/js"
+	"gopkg.in/metakeule/gopherjs/js"
 )
 
 func init() {

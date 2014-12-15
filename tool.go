@@ -1,11 +1,8 @@
 package main
 
 import (
-	"gopkg.in/metakeule/tools.v1/go/types"
 	"flag"
 	"fmt"
-	gbuild "github.com/gopherjs/gopherjs/build"
-	"github.com/gopherjs/gopherjs/compiler"
 	"go/build"
 	"go/scanner"
 	"io/ioutil"
@@ -14,6 +11,10 @@ import (
 	"path/filepath"
 	"strings"
 	"syscall"
+
+	"golang.org/x/tools/go/types"
+	gbuild "gopkg.in/metakeule/gopherjs/build"
+	"gopkg.in/metakeule/gopherjs/compiler"
 )
 
 var currentDirectory string

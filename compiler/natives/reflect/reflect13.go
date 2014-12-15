@@ -3,7 +3,7 @@
 package reflect
 
 import (
-	"github.com/gopherjs/gopherjs/js"
+	"gopkg.in/metakeule/gopherjs/js"
 	"unsafe"
 )
 
@@ -118,7 +118,7 @@ func MakeSlice(typ Type, len, cap int) Value {
 }
 
 func jsObject() *rtype {
-	return reflectType(js.Global.Get("$packages").Get("github.com/gopherjs/gopherjs/js").Get("Object"))
+	return reflectType(js.Global.Get("$packages").Get("gopkg.in/metakeule/gopherjs/js").Get("Object"))
 }
 
 func TypeOf(i interface{}) Type {

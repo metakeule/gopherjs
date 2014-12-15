@@ -1,7 +1,7 @@
 package js_test
 
 import (
-	"github.com/gopherjs/gopherjs/js"
+	"gopkg.in/metakeule/gopherjs/js"
 	"reflect"
 	"testing"
 	"time"

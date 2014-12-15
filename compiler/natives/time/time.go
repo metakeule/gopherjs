@@ -3,7 +3,7 @@
 package time
 
 import (
-	"github.com/gopherjs/gopherjs/js"
+	"gopkg.in/metakeule/gopherjs/js"
 )
 
 func now() (sec int64, nsec int32) {

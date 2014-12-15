@@ -2,8 +2,6 @@ package compiler
 
 import (
 	"bytes"
-	"gopkg.in/metakeule/tools.v1/go/gcimporter"
-	"gopkg.in/metakeule/tools.v1/go/types"
 	"encoding/asn1"
 	"encoding/binary"
 	"encoding/json"
@@ -12,6 +10,9 @@ import (
 	"io"
 	"sort"
 	"strings"
+
+	"golang.org/x/tools/go/gcimporter"
+	"golang.org/x/tools/go/types"
 )
 
 const GOROUTINES = false

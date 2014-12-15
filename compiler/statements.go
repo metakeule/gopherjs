@@ -1,12 +1,13 @@
 package compiler
 
 import (
-	"gopkg.in/metakeule/tools.v1/go/exact"
-	"gopkg.in/metakeule/tools.v1/go/types"
 	"fmt"
 	"go/ast"
 	"go/token"
 	"strings"
+
+	"golang.org/x/tools/go/exact"
+	"golang.org/x/tools/go/types"
 )
 
 type This struct {
